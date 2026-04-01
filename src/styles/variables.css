@@ -1,0 +1,17 @@
+:root {
+    /* Colors */
+    --primary-color: #F97316;
+    /* Cam */
+    --primary-hover: #ea580c;
+    --secondary-color: #1E3A8A;
+    /* Xanh Navy */
+    --secondary-hover: #1e40af;
+
+    --bg-light: #f9fafb;
+    --text-main: #1f2937;
+    --text-muted: #6b7280;
+
+    /* Layout */
+    --container-max-width: 1200px;
+    --spacing-section: 80px;
+}
