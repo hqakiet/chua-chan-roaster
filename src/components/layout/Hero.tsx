@@ -17,7 +17,7 @@ const Hero = () => {
           <br />
           <span>
             TỈNH THỨC <br />
-            GIỮA ĐỜI SỐNG SỐ
+            GIỮA ĐỜI SỐNG SỐ HÓA
           </span>
         </h1>
 

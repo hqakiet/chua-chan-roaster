@@ -5,7 +5,7 @@ const Navbar = ({ isScrolled }: { isScrolled: boolean }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navLinks = [
     { name: 'Câu chuyện thương hiệu', href: '#story' },
-    { name: 'Đặc Sản', href: '#products' },
+    { name: 'Sản phẩm', href: '#products' },
     { name: 'Hệ Sinh Thái', href: '#services' }
   ];
 

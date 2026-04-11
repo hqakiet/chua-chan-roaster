@@ -209,7 +209,7 @@ ul {
 }
 
 .nav-item {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--secondary);
   text-transform: uppercase;
@@ -498,14 +498,14 @@ ul {
 
 .story-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
   margin-top: 40px;
 }
 
 .story-card {
-  padding: 24px;
-  border-radius: 24px;
+  padding: 20px;
+  border-radius: 20px;
   transition: all 0.3s;
   border: 1px solid;
 }
@@ -530,8 +530,18 @@ ul {
   border-color: #fdba74;
 }
 
+.card-value {
+  background: rgba(220, 252, 231, 0.5);
+  border-color: #bbf7d0;
+}
+
+.card-value:hover {
+  background: #dcfce7;
+  border-color: #86efac;
+}
+
 .story-card h4 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: var(--secondary);
   margin-bottom: 8px;
@@ -539,8 +549,9 @@ ul {
 }
 
 .story-card p {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--text-muted);
+  line-height: 1.5;
 }
 
 
@@ -947,7 +958,7 @@ ul {
 
 .form-label {
   display: block;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: bold;
   color: var(--secondary);
   margin-bottom: 8px;
@@ -1445,10 +1456,6 @@ ul {
     border-radius: 20px;
   }
 
-  .story-cards {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
 
   /* Cover Flow Mobile */
   .coverflow-wrapper {
