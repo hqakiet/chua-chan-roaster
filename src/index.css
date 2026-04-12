@@ -274,7 +274,7 @@ ul {
   display: block;
   padding-bottom: 12px;
   border-bottom: 1px solid var(--border-color);
-  font-weight: 700;
+  font-weight: 500;
   color: var(--secondary);
   text-transform: uppercase;
 }
@@ -528,13 +528,13 @@ ul {
 
 .story-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 16px;
   margin-top: 40px;
 }
 
 .story-card {
-  padding: 20px;
+  padding: 15px;
   border-radius: 20px;
   transition: all 0.3s;
   border: 1px solid;
@@ -675,7 +675,7 @@ ul {
 
 .cf-sub {
   color: var(--secondary);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -726,7 +726,7 @@ ul {
 
 .cf-spec-value {
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /* Active State */
@@ -1658,7 +1658,7 @@ ul {
   }
 
   .cf-title {
-    font-size: 32px;
+    font-size: 25px;
   }
 
   .cf-specs {

@@ -49,11 +49,9 @@ const BrandStory = () => {
               <Leaf size={32} color="#10b981" />
               <h4>Giá Trị Cốt Lõi</h4>
               <p>
-                Chất lượng
-                <br /> Tỉnh thức
-                <br /> Tự hào Việt
-                <br /> Minh bạch
-                <br /> Bền vững
+                Chất lượng - Tỉnh thức <br />
+                Tự hào Việt <br />
+                Minh bạch - Bền vững
               </p>
             </div>
           </div>
