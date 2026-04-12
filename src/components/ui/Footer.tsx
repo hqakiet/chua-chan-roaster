@@ -21,10 +21,10 @@ const Footer = () => {
                 href="https://www.facebook.com/profile.php?id=61577158577427"
                 target="_blank"
               >
-                <img src="/facebook.svg" alt="Facebook" />
+                <img src="facebook.svg" alt="Facebook" />
               </a>
               <a href="https://www.tiktok.com/@lehongphicoffee" target="_blank">
-                <img src="/tiktok.svg" alt="Tiktok" />
+                <img src="tiktok.svg" alt="Tiktok" />
               </a>
             </div>
           </div>
