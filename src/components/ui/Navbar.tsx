@@ -15,7 +15,7 @@ const Navbar = ({ isScrolled }: { isScrolled: boolean }) => {
         <a href="#">
           <a href="#">
             <img
-              src="/images/logo_chuachanroaster.png"
+              src="images/logo_chuachanroaster.png"
               alt="Chứa Chan"
               className="nav-logo"
             />

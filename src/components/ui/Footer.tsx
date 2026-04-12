@@ -7,7 +7,7 @@ const Footer = () => {
           <div className="bento-card span-2">
             <div className="bento-brand-content">
               <img
-                src="/images/logo_chuachanroaster.png"
+                src="images/logo_chuachanroaster.png"
                 alt="Chứa Chan Roaster"
                 className="bento-logo"
               />
