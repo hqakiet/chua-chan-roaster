@@ -132,9 +132,9 @@ ul {
 }
 
 .btn-primary {
-  background: var(--primary);
+  background: var(--secondary);
   color: #fff;
-  box-shadow: 0 4px 14px rgba(249, 115, 22, 0.3);
+  box-shadow: 0 4px 14px rgba(30, 58, 138, 0.3);
 }
 
 .btn-primary:hover {
@@ -375,7 +375,7 @@ ul {
   display: flex;
   align-items: center;
   padding: 60px;
-  max-width: 700px;
+  max-width: 850px;
   color: #fff;
 }
 
@@ -486,14 +486,14 @@ ul {
   position: relative;
   border-radius: 24px;
   overflow: hidden;
-  height: 600px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  /* height: 600px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); */
 }
 
 .story-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .story-cards {
@@ -554,6 +554,28 @@ ul {
   line-height: 1.5;
 }
 
+/* ==========================================================================
+    CINEMATIC VIDEO SECTION
+    ========================================================================== */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+  background: #000;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 
 /* ==========================================================================
      CORE PRODUCTS - BỐ CỤC SHOWCASE TABS (MỚI)
@@ -622,7 +644,7 @@ ul {
 }
 
 .cf-sub {
-  color: var(--primary);
+  color: var(--secondary);
   font-size: 14px;
   font-weight: 800;
   text-transform: uppercase;
@@ -732,7 +754,7 @@ ul {
 
 .eco-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
@@ -1062,40 +1084,11 @@ ul {
   line-height: 1.4;
 }
 
-.bento-logo {
-  height: auto;
-  max-height: 64px;
-  min-width: 150px;
-  object-fit: contain;
-  margin-bottom: 0;
-  flex-shrink: 0;
-}
-
-.bento-desc {
-  color: var(--text-muted);
-  font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 0;
-  max-width: 100%;
-}
-
 .bento-socials {
   display: flex;
   gap: 12px;
   margin-top: auto;
   margin-left: 15px;
-}
-
-.bento-socials a {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--bg-light);
-  color: var(--secondary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s;
 }
 
 .bento-socials a:hover {
@@ -1144,6 +1137,7 @@ ul {
   min-width: 150px;
   object-fit: contain;
   margin-bottom: 24px;
+  flex-shrink: 0;
   align-self: flex-start;
 }
 
@@ -1153,12 +1147,6 @@ ul {
   line-height: 1.6;
   margin-bottom: 32px;
   max-width: 400px;
-}
-
-.bento-socials {
-  display: flex;
-  gap: 12px;
-  margin-top: auto;
 }
 
 .bento-socials a {
@@ -1171,12 +1159,6 @@ ul {
   align-items: center;
   justify-content: center;
   transition: all 0.3s;
-}
-
-.bento-socials a:hover {
-  background: var(--primary);
-  color: #fff;
-  transform: translateY(-4px);
 }
 
 /* Links & Contact Cards */
@@ -1452,10 +1434,13 @@ ul {
 
   /* Story */
   .story-image {
-    height: 300px;
+    height: 350px;
     border-radius: 20px;
   }
 
+  .video-wrapper {
+    border-radius: 20px;
+  }
 
   /* Cover Flow Mobile */
   .coverflow-wrapper {
@@ -1522,8 +1507,8 @@ ul {
   }
 
   .bento-brand-content {
-    flex-direction: column;
-    text-align: center;
+    /* flex-direction: column; */
+    /* text-align: center; */
     align-items: center;
     gap: 16px;
   }

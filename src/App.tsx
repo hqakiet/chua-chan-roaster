@@ -7,6 +7,7 @@ import CoreProducts from './components/layout/CoreProducts';
 import Ecosystem from './components/layout/Ecosystem';
 import ContactSection from './components/layout/ContactSection';
 import Footer from './components/ui/Footer';
+import CinematicVideo from './components/layout/CinematicVideo';
 
 export default function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,6 +28,8 @@ export default function App() {
         <FeaturedSlider />
 
         <BrandStory />
+
+        <CinematicVideo />
 
         <CoreProducts />
 

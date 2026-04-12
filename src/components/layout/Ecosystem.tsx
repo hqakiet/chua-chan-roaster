@@ -1,102 +1,188 @@
-import { Coffee, Settings, Store, Zap } from 'lucide-react';
+import { Coffee, GraduationCap, Leaf, Wrench, Zap } from 'lucide-react';
 
 const ECOSYSTEM_DATA = [
+  {
+    title: 'Cà Phê',
+    icon: <Coffee size={28} />,
+    themeClass: { text: '#92400e', bg: '#fef3c7', border: '#fde68a' },
+    items: [
+      {
+        name: 'Cà Phê Pha Máy',
+        img: 'https://images.unsplash.com/photo-1559525839-b184a4d698c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+        desc: 'Được rang mộc chuyên dụng để chiết xuất lớp Crema hoàn hảo cho các dòng máy pha.',
+        details: [
+          {
+            label: 'Dòng Nguyên Bản',
+            value: 'Robusta Honey, Robusta Natural, Arabica Cầu Đất'
+          },
+          {
+            label: 'Dòng Phối Trộn',
+            value: '7 Ro Honey - 3 Ara, 7 Ro Natural - 3 Ara'
+          }
+        ]
+      },
+      {
+        name: 'Cà Phê Pha Phin',
+        img: 'https://images.unsplash.com/photo-1572119865084-43c285814d63?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+        desc: 'Hương vị truyền thống đậm đà, hậu vị ngọt sâu, chuẩn gu cà phê Việt.',
+        details: [
+          {
+            label: 'Dòng Nguyên Bản',
+            value: 'Robusta Honey, Robusta Natural, Arabica Cầu Đất'
+          },
+          {
+            label: 'Dòng Phối Trộn',
+            value: '8 Ro Honey - 2 Ara, 8 Ro Natural - 2 Ara'
+          }
+        ]
+      },
+      {
+        name: 'Cà Phê Túi Giấy (Drip Bag)',
+        img: 'https://images.unsplash.com/photo-1611162458324-aae1eb4129a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+        desc: 'Tiện lợi, nhanh chóng nhưng vẫn giữ trọn hương vị cà phê rang mộc tươi mới.',
+        details: [
+          {
+            label: 'Dòng Nguyên Bản',
+            value: 'Robusta Honey, Robusta Natural, Arabica Cầu Đất'
+          },
+          {
+            label: 'Dòng Phối Trộn',
+            value: '8 Ro Honey - 2 Ara, 8 Ro Natural - 2 Ara'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: 'Trà & Đặc Sản',
+    icon: <Leaf size={28} />,
+    themeClass: { text: '#166534', bg: '#dcfce7', border: '#bbf7d0' },
+    items: [
+      {
+        name: 'Trà Pha Chế Chuyên Dụng',
+        img: 'https://images.unsplash.com/photo-1576092762791-dd9e2220abd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+        desc: 'Cốt trà đậm vị, hương thơm tự nhiên, phù hợp pha trà sữa và trà trái cây.',
+        details: [
+          { label: 'Phân loại', value: 'Trà Lài, Trà Olong, Trà Đen' },
+          { label: 'Ứng dụng', value: 'Trà sữa, Trà trái cây, Trà macchiato' }
+        ]
+      },
+      {
+        name: 'Đặc Sản Núi Chứa Chan',
+        img: 'https://images.unsplash.com/photo-1596422846543-75c6fa077408?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+        desc: 'Nông sản địa phương tuyển chọn, sấy giòn rụm, giữ nguyên dưỡng chất.',
+        details: [
+          { label: 'Sản phẩm', value: 'Chuối sấy, Hạt điều' },
+          { label: 'Đóng gói', value: 'Túi zip tiện lợi, đảm bảo an toàn VSTP' }
+        ]
+      }
+    ]
+  },
+  {
+    title: 'Thiết Bị',
+    icon: <Wrench size={28} />,
+    themeClass: { text: '#374151', bg: '#f3f4f6', border: '#d1d5db' },
+    items: [
+      {
+        name: 'Máy Pha Cà Phê Công Nghiệp',
+        img: 'https://images.unsplash.com/photo-1585494156145-1c60a4fe952b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+        desc: 'Hệ thống máy pha tự động và bán tự động từ các thương hiệu hàng đầu thế giới.',
+        details: [
+          {
+            label: 'Phân khúc Cao cấp',
+            value: 'Nouva Simonelli, Faema, Astoria, Wega'
+          },
+          {
+            label: 'Phân khúc Tầm trung',
+            value: 'Casadio, Lamvita, Carimali, Gemilai'
+          }
+        ]
+      },
+      {
+        name: 'Máy Xay Cà Phê & Máy Nén',
+        img: 'https://images.unsplash.com/photo-1517055745164-325db197d195?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+        desc: 'Kiểm soát độ mịn hoàn hảo cho từng shot Espresso.',
+        details: [
+          {
+            label: 'Thương hiệu',
+            value:
+              'Mahlkonig, Mazzer, Fiorenzato, Eureka, Heycafe, Robust, Mxl beans'
+          },
+          { label: 'Phụ kiện', value: 'Máy nén tự động Eureka' }
+        ]
+      },
+      {
+        name: 'Máy Làm Đá Tinh Khiết',
+        img: 'https://images.unsplash.com/photo-1582255335835-21d3f54bf60b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+        desc: 'Cung cấp nguồn đá sạch liên tục cho hệ thống quầy bar.',
+        details: [
+          { label: 'Model phổ biến', value: 'Nk-63, Nk-121' },
+          { label: 'Model công suất lớn', value: 'Imk-75, Imk-150' }
+        ]
+      }
+    ]
+  },
   {
     title: 'Máy Trà & Sinh Tố',
     icon: <Zap size={28} />,
     themeClass: { text: '#4f46e5', bg: '#e0e7ff', border: '#c7d2fe' },
     items: [
       {
-        name: 'Vitamix The Quiet One',
+        name: 'Thiết Bị Trà Sữa Chuyên Dụng',
+        img: 'https://images.unsplash.com/photo-1620247657960-9d0d39e8ea69?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+        desc: 'Trọn bộ máy móc giúp tối ưu thời gian pha chế và chuẩn hóa định lượng.',
+        details: [
+          {
+            label: 'Nước nóng',
+            value: 'Fest RC 10, Macro MT8, Cây đun nước sôi'
+          },
+          {
+            label: 'Hỗ trợ pha chế',
+            value: 'Máy đánh sữa, Máy lắc, Máy đong bột, Máy định lượng đường'
+          }
+        ]
+      },
+      {
+        name: 'Máy Xay Sinh Tố & Nước Ép',
         img: 'https://images.unsplash.com/photo-1570222094114-d054a817e56b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-        desc: 'Đỉnh cao máy xay công nghiệp. Tích hợp hộp chống ồn tuyệt đối.',
+        desc: 'Máy xay công nghiệp công suất lớn, phá đá mượt mà.',
         details: [
-          { label: 'Công suất', value: '3 HP' },
-          { label: 'Trọng lượng', value: '9.1 kg' }
-        ]
-      },
-      {
-        name: 'Omniblend TM-800A',
-        img: 'https://images.unsplash.com/photo-1589396275673-38c5ac892186?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-        desc: 'Giải pháp tiết kiệm chi phí nhưng mang lại hiệu năng xay cực cao.',
-        details: [
-          { label: 'Công suất', value: '1200W' },
-          { label: 'Dung tích cối', value: '1.5 Lít' }
+          {
+            label: 'Dòng Cao cấp',
+            value: 'Vitamix The Quiet One 220v, Vitamix Drink Machine Advance'
+          },
+          {
+            label: 'Dòng Phổ thông',
+            value: 'Omniblend TM-800A (Kèm hộp chống ồn)'
+          }
         ]
       }
     ]
   },
   {
-    title: 'Máy Móc Cà Phê',
-    icon: <Settings size={28} />,
-    themeClass: { text: '#2563eb', bg: '#dbeafe', border: '#bfdbfe' },
+    title: 'Dịch Vụ F&B Trọn Gói',
+    icon: <GraduationCap size={28} />,
+    themeClass: { text: '#be185d', bg: '#fce7f3', border: '#fbcfe8' },
     items: [
       {
-        name: 'Nouva Simonelli',
-        img: 'https://images.unsplash.com/photo-1585494156145-1c60a4fe952b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-        desc: 'Dòng Appia Life 2 Group. Công nghệ chiết xuất chuẩn, nồi hơi ổn định.',
+        name: 'Đào Tạo Pha Chế Thực Chiến',
+        img: 'https://images.unsplash.com/photo-1600565152253-29a50274151b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+        desc: 'Cập nhật công thức mới nhất, trang bị kỹ năng tay nghề chuẩn chuyên gia.',
         details: [
-          { label: 'Công suất', value: '3200W' },
-          { label: 'Nồi hơi', value: '11 Lít' }
+          { label: 'Module 1', value: 'Barista Cà phê (Máy & Truyền thống)' },
+          { label: 'Module 2 & 3', value: 'Trà - Trà sữa & Sinh tố - Nước ép' }
         ]
       },
       {
-        name: 'Mahlkonig / Mazzer',
-        img: 'https://images.unsplash.com/photo-1517036987165-22d7de174d53?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-        desc: 'Các dòng máy xay đỉnh cao của thế giới. Lưỡi dao sắc bén cho ra hạt mịn.',
+        name: 'Setup & Vận Hành Quán F&B',
+        img: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+        desc: 'Giải pháp toàn diện từ lên menu, bố trí quầy bar đến đào tạo nhân sự cho chuỗi.',
         details: [
-          { label: 'Lưỡi dao', value: '98 mm Flat Burr' },
-          { label: 'Tốc độ', value: '1500 rpm' }
-        ]
-      }
-    ]
-  },
-  {
-    title: 'Cà Phê & Trà',
-    icon: <Coffee size={28} />,
-    themeClass: { text: '#ea580c', bg: '#ffedd5', border: '#fed7aa' },
-    items: [
-      {
-        name: 'Robusta / Blend',
-        img: 'https://images.unsplash.com/photo-1559525839-b184a4d698c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-        desc: 'Các dòng cà phê hạt rang mộc nguyên chất, đa dạng tỷ lệ Blend.',
-        details: [
-          { label: 'Vùng trồng', value: 'Đồng Nai' },
-          { label: 'Mức rang', value: 'Medium Dark' }
-        ]
-      },
-      {
-        name: 'Trà Lài & Olong',
-        img: 'https://images.unsplash.com/photo-1576092768241-dec231879fc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-        desc: 'Dòng trà pha chế cao cấp. Trà lài thơm ngát dịu nhẹ, Trà Olong vàng óng.',
-        details: [
-          { label: 'Xuất xứ', value: 'Bảo Lộc' },
-          { label: 'Ứng dụng', value: 'Trà trái cây' }
-        ]
-      }
-    ]
-  },
-  {
-    title: 'Setup & Đặc Sản',
-    icon: <Store size={28} />,
-    themeClass: { text: '#e11d48', bg: '#ffe4e6', border: '#fecdd3' },
-    items: [
-      {
-        name: 'Đào Tạo Pha Chế',
-        img: 'https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-        desc: 'Cung cấp các khóa học thực chiến từ chuyên viên pha chế Cà phê.',
-        details: [
-          { label: 'Thời lượng', value: '10 - 15 buổi' },
-          { label: 'Thực hành', value: '90% thời gian' }
-        ]
-      },
-      {
-        name: 'Chuối Sấy Chứa Chan',
-        img: 'https://images.unsplash.com/photo-1596591606975-97ee5cef3a1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-        desc: 'Đặc sản tự nhiên từ vùng núi Chứa Chan. Lát chuối giòn rụm, ngọt thanh.',
-        details: [
-          { label: 'Thành phần', value: '100% Chuối tươi' },
-          { label: 'Đóng gói', value: 'Túi Zip 500g' }
+          {
+            label: 'Mô hình',
+            value: 'Quán Cà Phê, Quán Trà Sữa, Quán Nước Ép'
+          },
+          { label: 'Phạm vi', value: 'Cửa hàng độc lập, Chuỗi nhượng quyền' }
         ]
       }
     ]

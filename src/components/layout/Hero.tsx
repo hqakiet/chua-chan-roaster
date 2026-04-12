@@ -5,10 +5,7 @@ const Hero = () => {
     <section className="hero">
       <div className="hero-bg">
         <div className="hero-bg-overlay"></div>
-        <img
-          src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
-          alt="Coffee"
-        />
+        <img src="images/hero_cover.jpg" alt="Coffee" />
       </div>
 
       <div className="hero-content">
@@ -26,8 +23,8 @@ const Hero = () => {
           với niềm tự hào cà phê đặc sản Việt Nam.
         </p>
 
-        <a href="#products" className="btn btn-primary">
-          Khám phá tinh hoa <ChevronRight size={20} />
+        <a href="#story" className="btn btn-primary">
+          Câu chuyện thương hiệu <ChevronRight size={20} />
         </a>
       </div>
     </section>

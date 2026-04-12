@@ -3,27 +3,31 @@ import { useEffect, useState } from 'react';
 
 const SLIDER_ITEMS = [
   {
-    tag: 'Sản Phẩm Cốt Lõi',
-    title: 'Cà Phê Rang Mộc Đặc Sản',
-    desc: 'Tuyển chọn từ những hạt Robusta và Arabica chất lượng nhất, rang mộc 100% giữ trọn hương vị nguyên bản, phù hợp pha máy và pha phin.',
-    image:
-      'https://images.unsplash.com/photo-1559525839-b184a4d698c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-    link: '#products'
-  },
-  {
-    tag: 'Tiện Lợi & Nhanh Chóng',
-    title: 'Cà Phê Túi Giấy Tiện Dụng',
-    desc: 'Giải pháp hoàn hảo cho nhịp sống bận rộn. Thưởng thức một ly cà phê phin chuẩn vị mọi lúc, mọi nơi chỉ với vài phút chuẩn bị.',
-    image:
-      'https://images.unsplash.com/photo-1559525839-b184a4d698c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    tag: 'Sản xuất & Cung cấp',
+    title: 'Cà Phê Nguyên Bản & Trọn Vị',
+    desc: 'Giải pháp toàn diện từ xưởng rang xay đến tách cà phê của bạn. Chúng tôi cung cấp đa dạng các dòng cà phê hạt và cà phê bột chất lượng cao.',
+    image: 'images/coffee-machine.jpg',
     link: '#products'
   },
   {
     tag: 'Nguyên Liệu Cao Cấp',
-    title: 'Trà Pha Chế Chuyên Nghiệp',
-    desc: 'Cung cấp các dòng Trà Lài, Trà Olong và Trà Đen hảo hạng, giúp chiết xuất hương thơm đậm đà cho những ly trà sữa hoàn hảo.',
-    image:
-      'https://images.unsplash.com/photo-1576092768241-dec231879fc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    title: 'Trà Pha Chế & Nông Sản Sấy',
+    desc: 'Tuyển chọn các dòng trà chuyên dụng giúp định hình hương vị đồ uống, kèm theo các sản phẩm nông sản sấy cao cấp như hạt điều, chuối sấy.',
+    image: 'images/traphache.jpg',
+    link: '#services'
+  },
+  {
+    tag: 'Thiết Bị F&B',
+    title: 'Máy Móc Pha Chế Hiện Đại',
+    desc: 'Đồng hành cùng sự phát triển của quán với hệ thống trang thiết bị, máy móc tiên tiến, tối ưu hiệu suất cho mô hình cà phê, trà sữa và nước ép.',
+    image: 'images/fbdevice.jpg',
+    link: '#services'
+  },
+  {
+    tag: 'Đào Tạo & Setup',
+    title: 'Giải Pháp Vận Hành Quán Toàn Diện',
+    desc: 'Xây dựng nền tảng kinh doanh vững chắc với dịch vụ tư vấn setup cửa hàng, chuỗi F&B trọn gói cùng các khóa đào tạo pha chế chuyên sâu.',
+    image: 'images/training_setup.jpg',
     link: '#services'
   }
 ];
@@ -34,7 +38,7 @@ const FeaturedSlider = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % SLIDER_ITEMS.length);
-    }, 5000);
+    }, 50000);
     return () => clearInterval(timer);
   }, []);
 

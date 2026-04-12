@@ -9,10 +9,7 @@ const BrandStory = () => {
     >
       <div className="container story-grid">
         <div className="story-image">
-          <img
-            src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-            alt="Pour over coffee process"
-          />
+          <img src="/images/brand_story.png" alt="Pour over coffee process" />
         </div>
 
         <div>
@@ -50,7 +47,13 @@ const BrandStory = () => {
             <div className="story-card card-value">
               <Leaf size={32} color="#10b981" />
               <h4>Giá Trị Cốt Lõi</h4>
-              <p>Chất lượng - Tỉnh thức - Tự hào Việt - Minh bạch - Bền vững</p>
+              <p>
+                Chất lượng
+                <br /> Tỉnh thức
+                <br /> Tự hào Việt
+                <br /> Minh bạch
+                <br /> Bền vững
+              </p>
             </div>
           </div>
         </div>
