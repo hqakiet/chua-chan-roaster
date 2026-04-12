@@ -746,168 +746,303 @@ ul {
 }
 
 
-/* Ecosystem */
+/* ==========================================================================
+     ECOSYSTEM - BỐ CỤC SIDEBAR TABS KÈM CHI TIẾT CẤP 2 (MỚI)
+     ========================================================================== */
 .eco-section {
   background: #fff;
   border-top: 1px solid var(--border-color);
 }
 
-.eco-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+.eco-wrapper {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
 }
 
-.eco-col {
-  background: #fff;
-  border-radius: 24px;
-  padding: 24px;
-  border: 1px solid var(--border-color);
-  transition: box-shadow 0.3s;
-  position: relative;
-  z-index: 10;
+.eco-sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: sticky;
+  top: 120px;
 }
 
-.eco-col:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  z-index: 30;
-}
-
-.eco-header {
+.eco-tab {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-bottom: 24px;
+  padding: 16px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text-muted);
+  background: var(--bg-light);
+  border: 2px solid transparent;
+  transition: all 0.3s;
+  text-align: left;
 }
 
-.eco-icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 16px;
+.eco-tab:hover {
+  background: #f3f4f6;
+}
+
+.eco-tab.active {
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+.eco-tab-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.eco-header h3 {
-  font-size: 20px;
-  font-weight: bold;
-  color: var(--secondary);
-}
-
-.eco-item {
-  position: relative;
-  margin-bottom: 16px;
-}
-
-.eco-item-title {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  cursor: help;
-  font-weight: 500;
-  color: #374151;
-  transition: color 0.2s;
-}
-
-.eco-item-title::before {
-  content: '';
-  display: block;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  margin-top: 8px;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  transition: all 0.3s;
   flex-shrink: 0;
 }
 
-.eco-item:hover .eco-item-title {
-  color: var(--primary);
-  text-decoration: underline;
-  text-decoration-style: dashed;
-  text-underline-offset: 4px;
+.eco-content {
+  flex: 2.5;
+  animation: fadeInEco 0.4s ease-out forwards;
 }
 
-/* Tooltip Ecosystem */
-.eco-tooltip {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) scale(0.95);
-  background: #fff;
-  border-radius: 16px;
-  padding: 20px;
-  width: 340px;
-  box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.3);
-  border: 1px solid var(--border-color);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: all 0.3s;
-  z-index: 100;
-}
-
-.eco-item:hover .eco-tooltip {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(-50%) scale(1);
-  pointer-events: auto;
-}
-
-.eco-tooltip-img {
-  width: 100%;
-  height: 140px;
-  border-radius: 12px;
-  object-fit: cover;
-  margin-bottom: 16px;
-}
-
-.eco-tooltip h4 {
-  font-size: 18px;
-  font-weight: 900;
-  margin-bottom: 8px;
-}
-
-.eco-tooltip p {
-  font-size: 13px;
-  color: var(--text-muted);
-  margin-bottom: 16px;
-}
-
-.eco-specs {
-  border-top: 1px solid var(--border-color);
-  padding-top: 16px;
+/* Accordion List */
+.eco-accordion-list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
+}
+
+.eco-accordion-item {
+  background: #fff;
+  border-radius: 24px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.eco-accordion-item:hover {
+  border-color: #d1d5db;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+.eco-accordion-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.eco-accordion-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid var(--border-color);
+}
+
+.eco-accordion-info {
+  flex: 1;
+}
+
+.eco-accordion-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+  transition: color 0.3s;
+}
+
+.eco-accordion-item:hover .eco-accordion-title {
+  color: var(--primary);
+}
+
+.eco-accordion-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.eco-accordion-trigger {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-light);
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+}
+
+/* Trạng thái khi được mở rộng (Expanded) */
+.eco-accordion-item.expanded {
+  border-color: var(--primary);
+  box-shadow: 0 10px 30px rgba(249, 115, 22, 0.1);
+}
+
+.eco-accordion-item.expanded .eco-accordion-trigger {
+  background: var(--primary);
+  color: #fff;
+  transform: rotate(180deg);
+  border-color: var(--primary);
+}
+
+.eco-accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+}
+
+.eco-accordion-item.expanded .eco-accordion-body {
+  max-height: 1500px;
+  opacity: 1;
+}
+
+/* Tăng max-height để chứa list con */
+.eco-accordion-content {
+  padding: 0 20px 24px 140px;
+}
+
+.eco-spec-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  background: var(--bg-light);
+  padding: 16px 20px;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
 }
 
 .eco-spec-row {
   display: flex;
   justify-content: space-between;
-  font-size: 13px;
+  align-items: flex-start;
+  gap: 16px;
+  font-size: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed #d1d5db;
+}
+
+.eco-spec-row:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
 .eco-spec-label {
   color: var(--text-muted);
-  font-weight: 500;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .eco-spec-value {
-  font-weight: bold;
+  font-weight: 700;
   color: var(--text-dark);
   text-align: right;
+  line-height: 1.4;
 }
 
-/* Tooltip positions based on column index */
-.col-0 .eco-tooltip,
-.col-1 .eco-tooltip {
-  left: 100%;
-  margin-left: 16px;
+/* Sub-items (Cấp chi tiết thứ 2 - Mới) */
+.eco-subitem-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+  border-top: 1px dashed var(--border-color);
+  padding-top: 16px;
 }
 
-.col-2 .eco-tooltip,
-.col-3 .eco-tooltip {
-  right: 100%;
-  margin-right: 16px;
+.eco-subitem {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: #f9fafb;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 16px;
+  transition: all 0.3s;
+}
+
+.eco-subitem:hover {
+  border-color: #d1d5db;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transform: translateX(4px);
+}
+
+.eco-subitem-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid var(--border-color);
+}
+
+.eco-subitem-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.eco-subitem-header {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--secondary);
+  margin-bottom: 6px;
+}
+
+.eco-subitem-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.eco-subitem-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.eco-subitem-spec {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.eco-subitem-spec span {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+@keyframes fadeInEco {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Contact Section */
@@ -1290,8 +1425,8 @@ ul {
 }
 
 /* ==========================================================================
-     RESPONSIVE ADJUSTMENTS
-     ========================================================================== */
+    RESPONSIVE ADJUSTMENTS
+    ========================================================================== */
 
 /* Tablet (màn hình dưới 1024px) */
 @media (max-width: 1024px) {
@@ -1318,8 +1453,25 @@ ul {
     height: 440px;
   }
 
-  .eco-grid {
-    grid-template-columns: repeat(2, 1fr);
+  /* Ecosystem Sidebar Tabs Mobile/Tablet */
+  .eco-wrapper {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .eco-sidebar {
+    flex-direction: row;
+    position: static;
+    overflow-x: auto;
+    padding-bottom: 12px;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+  }
+
+  .eco-tab {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    white-space: nowrap;
   }
 
   .col-0 .eco-tooltip,
@@ -1470,13 +1622,64 @@ ul {
     padding: 10px 12px;
   }
 
-  /* Ecosystem */
-  .eco-grid {
-    grid-template-columns: 1fr;
+  /* Ecosystem Accordion Mobile */
+  .eco-accordion-header {
+    padding: 16px;
+    align-items: flex-start;
   }
 
-  .eco-tooltip {
-    display: none !important;
+  .eco-accordion-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .eco-accordion-title {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  .eco-accordion-desc {
+    font-size: 13px;
+  }
+
+  .eco-accordion-trigger {
+    width: 32px;
+    height: 32px;
+    margin-top: 4px;
+  }
+
+  .eco-accordion-content {
+    padding: 0 16px 20px 16px;
+  }
+
+  /* Bỏ thụt lề trên mobile để tiết kiệm diện tích */
+  .eco-spec-grid {
+    padding: 16px;
+  }
+
+  .eco-spec-row {
+    flex-direction: column;
+    gap: 4px;
+    text-align: left;
+  }
+
+  .eco-spec-value {
+    text-align: left;
+  }
+
+  .eco-subitem {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .eco-subitem-img {
+    width: 100%;
+    height: 140px;
+  }
+
+  .eco-subitem-spec {
+    font-size: 11px;
+    padding: 4px 8px;
   }
 
   /* Contact */
