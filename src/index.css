@@ -1317,7 +1317,7 @@ ul {
   object-fit: contain;
   margin-bottom: 24px;
   flex-shrink: 0;
-  align-self: flex-start;
+  align-self: center;
 }
 
 .bento-desc {

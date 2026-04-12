@@ -59,19 +59,6 @@ const Footer = () => {
                   <p>Đang cập nhật ....</p>
                 </div>
               </div>
-
-              {/* Store 3 */}
-              <div className="store-mini-card">
-                <img
-                  src="images/coming-soon.jpg"
-                  alt="Cửa hàng 3"
-                  className="store-mini-img"
-                />
-                <div className="store-mini-info">
-                  <h5>Cửa hàng 3</h5>
-                  <p>Đang cập nhật ....</p>
-                </div>
-              </div>
             </div>
           </div>
 
