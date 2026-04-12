@@ -1,6 +1,43 @@
-import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import { Mail, MapPin, Phone, Send, ShieldCheck } from 'lucide-react';
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+
+export const emailJS = {
+  servicesID: 'kiethqa051197@gmail.com',
+  templateID: 'template_tzu970m',
+  publicKey: 'qBcUlGTEiN6qvadoM'
+};
 
 const ContactSection = () => {
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>(
+    'idle'
+  );
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+    setStatus('submitting');
+
+    emailjs
+      .sendForm(
+        emailJS.servicesID,
+        emailJS.templateID,
+        form.current || '',
+        emailJS.publicKey
+      )
+      .then((response) => {
+        if (response.status === 200) {
+          setStatus('success');
+          e.target.reset();
+          setTimeout(() => setStatus('idle'), 5000);
+        }
+      })
+      .catch((error) => {
+        alert('Lỗi khi gửi thư. Vui lòng thử lại!' + error.text);
+        setStatus('idle');
+      });
+  };
+
   return (
     <section
       id="contact"
@@ -9,7 +46,7 @@ const ContactSection = () => {
     >
       <div className="container contact-grid">
         <div>
-          <h2 className="section-title">Liên hệ với chúng tôi</h2>
+          <h2 className="section-title">Kết Nối Với Chúng Tôi</h2>
           <p className="section-desc" style={{ marginLeft: 0 }}>
             Trải nghiệm hương vị bản nguyên tại cửa hàng hoặc gửi tin nhắn trực
             tiếp để được đội ngũ của chúng tôi tư vấn chi tiết.
@@ -53,12 +90,14 @@ const ContactSection = () => {
 
         <div>
           <div className="contact-form-card">
-            <form onSubmit={(e) => e.preventDefault()}>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="form-row">
                 <div>
                   <label className="form-label">Họ và tên *</label>
                   <input
                     type="text"
+                    name="name"
+                    required
                     className="form-input"
                     placeholder="Nhập tên của bạn"
                   />
@@ -67,6 +106,8 @@ const ContactSection = () => {
                   <label className="form-label">Số điện thoại *</label>
                   <input
                     type="tel"
+                    name="phone"
+                    required
                     className="form-input"
                     placeholder="0909 123 456"
                   />
@@ -76,6 +117,7 @@ const ContactSection = () => {
                 <label className="form-label">Email</label>
                 <input
                   type="email"
+                  name="email"
                   className="form-input"
                   placeholder="email@example.com"
                 />
@@ -84,6 +126,8 @@ const ContactSection = () => {
                 <label className="form-label">Nội dung quan tâm *</label>
                 <textarea
                   rows={4}
+                  name="message"
+                  required
                   className="form-input"
                   style={{ resize: 'none' }}
                   placeholder="Bạn cần tư vấn về sản phẩm, máy móc..."
@@ -91,11 +135,24 @@ const ContactSection = () => {
               </div>
               <button
                 type="submit"
+                disabled={status === 'submitting'}
                 className="btn btn-primary"
-                style={{ width: '100%', justifyContent: 'center' }}
+                style={{
+                  width: '100%',
+                  justifyContent: 'center',
+                  opacity: status === 'submitting' ? 0.7 : 1
+                }}
               >
-                Gửi <Send size={20} />
+                {status === 'submitting' ? 'Đang gửi...' : 'Gửi '}{' '}
+                <Send size={20} />
               </button>
+
+              {status === 'success' && (
+                <div className="form-success">
+                  <ShieldCheck size={24} /> Cảm ơn bạn đã gửi tin nhắn. Chúng
+                  tôi sẽ liên hệ lại sớm nhất!
+                </div>
+              )}
             </form>
           </div>
         </div>

@@ -37,7 +37,7 @@ const Footer = () => {
               {/* Store 1 */}
               <div className="store-mini-card">
                 <img
-                  src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=200&q=80"
+                  src="images/cuahang1.jpg"
                   alt="Cửa hàng 1"
                   className="store-mini-img"
                 />
@@ -50,39 +50,26 @@ const Footer = () => {
               {/* Store 2 */}
               <div className="store-mini-card">
                 <img
-                  src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=200&q=80"
+                  src="images/coming-soon.jpg"
                   alt="Cửa hàng 2"
                   className="store-mini-img"
                 />
                 <div className="store-mini-info">
                   <h5>Cửa hàng 2</h5>
-                  <p>TP. Biên Hòa, Đồng Nai (Sắp mở)</p>
+                  <p>Đang cập nhật ....</p>
                 </div>
               </div>
 
               {/* Store 3 */}
               <div className="store-mini-card">
                 <img
-                  src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=200&q=80"
+                  src="images/coming-soon.jpg"
                   alt="Cửa hàng 3"
                   className="store-mini-img"
                 />
                 <div className="store-mini-info">
                   <h5>Cửa hàng 3</h5>
-                  <p>Quận 1, TP. HCM (Sắp mở)</p>
-                </div>
-              </div>
-
-              {/* Store 4 */}
-              <div className="store-mini-card">
-                <img
-                  src="https://images.unsplash.com/photo-1501339817309-158cd983488c?w=200&q=80"
-                  alt="Cửa hàng 4"
-                  className="store-mini-img"
-                />
-                <div className="store-mini-info">
-                  <h5>Cửa hàng.......</h5>
-                  <p>Hệ thống nhượng quyền toàn quốc</p>
+                  <p>Đang cập nhật ....</p>
                 </div>
               </div>
             </div>
