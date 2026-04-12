@@ -62,7 +62,7 @@ const ECOSYSTEM_DATA = [
     ]
   },
   {
-    title: 'Trà & Đặc Sản đóng gói',
+    title: 'Trà & Đặc Sản',
     icon: <Leaf size={24} />,
     themeClass: { text: '#166534', bg: '#dcfce7', border: '#bbf7d0' },
     items: [

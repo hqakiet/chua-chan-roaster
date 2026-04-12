@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500;600;700;800;900&family=Unbounded:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
   --primary: #F97316;
@@ -10,7 +10,9 @@
   --text-muted: #6b7280;
   --border-color: #f3f4f6;
   --transition-speed: 0.3s;
-  --font-main: 'Phudu', 'DT Phudu', system-ui, -apple-system, sans-serif;
+  
+  --font-heading: 'Phudu', 'DT Phudu', system-ui, -apple-system, sans-serif;
+  --font-body: 'Unbounded', system-ui, -apple-system, sans-serif;
 }
 
 /* Reset & Base */
@@ -38,10 +40,29 @@ body {
 }
 
 body {
-  font-family: var(--font-main);
+  font-family: var(--font-body);
   color: var(--text-dark);
   background-color: #fff;
   line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.hero-title,
+.section-title,
+.slide-title,
+.bento-title,
+.eco-header h3,
+.eco-accordion-title,
+.eco-subitem-header,
+.btn,
+.nav-item,
+.bento-logo {
+  font-family: var(--font-heading);
 }
 
 a {
@@ -105,8 +126,8 @@ ul {
 }
 
 .section-title {
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 50px;
+  font-weight: 700;
   color: var(--secondary);
   line-height: 1.2;
   margin-bottom: 24px;
@@ -114,7 +135,7 @@ ul {
 
 .section-desc {
   color: var(--text-muted);
-  font-size: 18px;
+  font-size: 16px;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -209,7 +230,7 @@ ul {
 }
 
 .nav-item {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--secondary);
   text-transform: uppercase;
@@ -299,8 +320,17 @@ ul {
 }
 
 .hero-title {
-  font-size: 72px;
-  font-weight: 900;
+  font-size: 80px;
+  font-weight: 700;
+  color: var(--secondary);
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.hero-title-roaster {
+  font-family: var(--font-body);
+  font-size: 50px;
+  font-weight: 300;
   color: var(--secondary);
   line-height: 1.1;
   margin-bottom: 24px;
@@ -313,7 +343,7 @@ ul {
 }
 
 .hero-desc {
-  font-size: 20px;
+  font-size: 18px;
   color: var(--text-muted);
   margin-bottom: 40px;
   font-weight: 500;
@@ -403,14 +433,14 @@ ul {
 }
 
 .slide-title {
-  font-size: 56px;
-  font-weight: 900;
+  font-size: 50px;
+  font-weight: 700;
   margin-bottom: 20px;
   line-height: 1.1;
 }
 
 .slide-desc {
-  font-size: 20px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 32px;
 }
@@ -646,7 +676,7 @@ ul {
 .cf-sub {
   color: var(--secondary);
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 4px;
@@ -657,8 +687,8 @@ ul {
 
 .cf-title {
   color: #fff;
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 50px;
+  font-weight: 700;
   line-height: 1.1;
   margin-bottom: 0;
   transition: all 0.4s ease;
@@ -697,7 +727,6 @@ ul {
 .cf-spec-value {
   color: #fff;
   font-size: 14px;
-  font-weight: 600;
 }
 
 /* Active State */
@@ -775,7 +804,7 @@ ul {
   gap: 16px;
   padding: 16px 20px;
   border-radius: 20px;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 16px;
   color: var(--text-muted);
   background: var(--bg-light);
@@ -1091,8 +1120,8 @@ ul {
 }
 
 .info-item p {
-  color: var(--text-muted);
-  font-weight: 500;
+  color: var(--text-muted) !important;
+  font-weight: 400;
 }
 
 .contact-form-card {
@@ -1445,7 +1474,7 @@ ul {
 /* Tablet (màn hình dưới 1024px) */
 @media (max-width: 1024px) {
   .hero-title {
-    font-size: 56px;
+    font-size: 75px;
   }
 
   .story-grid {
@@ -1545,7 +1574,11 @@ ul {
   }
 
   .hero-title {
-    font-size: 40px;
+    font-size: 50px;
+  }
+
+  .hero-title-roaster {
+    font-size: 32px;
   }
 
   .hero-desc {
@@ -1756,6 +1789,10 @@ ul {
 /* Mobile Nhỏ (dưới 480px) */
 @media (max-width: 480px) {
   .hero-title {
+    font-size:50px;
+  }
+
+  .hero-title-roaster {
     font-size: 32px;
   }
 

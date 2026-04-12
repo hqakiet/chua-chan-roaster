@@ -9,9 +9,9 @@ const Hero = () => {
       </div>
 
       <div className="hero-content">
+        <h1 className="hero-title">CHỨA CHAN</h1>
+        <h1 className="hero-title-roaster">ROASTER</h1>
         <h1 className="hero-title">
-          CHỨA CHAN ROASTER
-          <br />
           <span>
             TỈNH THỨC <br />
             GIỮA ĐỜI SỐNG SỐ HÓA
