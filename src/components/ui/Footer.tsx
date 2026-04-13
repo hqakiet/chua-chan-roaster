@@ -65,13 +65,9 @@ const Footer = () => {
           {/* Bottom Bar */}
           <div className="bento-bottom">
             <p>
-              &copy; {new Date().getFullYear()} Chứa Chan Roaster. All rights
-              reserved.
+              &copy; {new Date().getFullYear()} Chứa Chan Roaster mọi quyền bảo
+              lưu
             </p>
-            <div className="bento-legal">
-              <a href="#">Điều khoản sử dụng</a>
-              <a href="#">Bảo mật thông tin</a>
-            </div>
           </div>
         </div>
       </div>
