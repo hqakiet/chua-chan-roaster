@@ -71,9 +71,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4>Hotline</h4>
-                <p style={{ fontSize: '20px', color: 'var(--text-dark)' }}>
-                  0889 604 234
-                </p>
+                <p>0889 604 234</p>
               </div>
             </div>
             <div className="info-item">
