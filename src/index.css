@@ -1742,7 +1742,7 @@ ul {
 
   .form-row {
     grid-template-columns: 1fr;
-    gap: 1;
+    /* gap: 1; */
   }
 
   .map-container {
