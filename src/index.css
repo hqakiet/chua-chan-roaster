@@ -212,7 +212,7 @@ ul {
 
 .nav-logo {
   height: 75px;
-  min-width: 150px;
+  /* min-width: 150px; */
   object-fit: contain;
   transition: height var(--transition-speed);
   mix-blend-mode: multiply;
@@ -220,7 +220,7 @@ ul {
 
 .navbar.scrolled .nav-logo {
   height: 75px;
-  min-width: 150px;
+  /* min-width: 150px; */
 }
 
 .nav-links {
@@ -1742,7 +1742,7 @@ ul {
 
   .form-row {
     grid-template-columns: 1fr;
-    gap: 0;
+    gap: 1;
   }
 
   .map-container {
