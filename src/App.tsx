@@ -8,6 +8,7 @@ import Ecosystem from './components/layout/Ecosystem';
 import ContactSection from './components/layout/ContactSection';
 import Footer from './components/ui/Footer';
 import CinematicVideo from './components/layout/CinematicVideo';
+import ScrollUp from './components/layout/ScrollUp';
 
 export default function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -39,6 +40,8 @@ export default function App() {
       </main>
 
       <Footer />
+
+      <ScrollUp />
     </div>
   );
 }

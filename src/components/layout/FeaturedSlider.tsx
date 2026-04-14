@@ -38,7 +38,7 @@ const FeaturedSlider = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % SLIDER_ITEMS.length);
-    }, 50000);
+    }, 10000);
     return () => clearInterval(timer);
   }, []);
 

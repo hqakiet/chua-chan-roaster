@@ -1469,6 +1469,35 @@ ul {
   color: var(--primary);
 }
 
+.scrollup {
+  position: fixed;
+  right: 2.5rem;
+  bottom: -20%;
+  background-color: var(--primary);
+  opacity: 0.8;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  z-index: 1000;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrollup__icon {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.scrollup:hover {
+  background-color: var(--primary-hover);
+}
+
+/* SHOW SCROLL */
+.show-scroll {
+  bottom: 3rem;
+}
+
 /* ==========================================================================
     RESPONSIVE ADJUSTMENTS
     ========================================================================== */
@@ -1547,6 +1576,15 @@ ul {
 
   .bento-card {
     grid-column: span 2;
+  }
+
+  .scrollup {
+    right: 1.5rem;
+    padding: 0.25rem 0.4rem;
+  }
+
+  .scrollup__icon {
+    font-size: 1.25rem;
   }
 }
 
@@ -1763,8 +1801,8 @@ ul {
   }
 
   .bento-brand-content {
-    /* flex-direction: column; */
-    /* text-align: center; */
+    flex-direction: column; 
+    text-align: center; 
     align-items: center;
     gap: 16px;
   }
@@ -1789,6 +1827,10 @@ ul {
     gap: 16px;
     text-align: center;
     padding-top: 16px;
+  }
+
+  .show-scroll {
+    bottom: 4rem;
   }
 }
 
@@ -1817,6 +1859,10 @@ ul {
 
   .hero-desc {
     font-size: 15px;
+  }
+
+  .scrollup {
+    right: 1rem;
   }
 }
 
