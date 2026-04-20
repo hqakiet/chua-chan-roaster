@@ -6,28 +6,28 @@ const SLIDER_ITEMS = [
     tag: 'Sản xuất & Cung cấp',
     title: 'Cà Phê Nguyên Bản & Trọn Vị',
     desc: 'Giải pháp toàn diện từ xưởng rang xay đến tách cà phê của bạn. Chúng tôi cung cấp đa dạng các dòng cà phê hạt và cà phê bột chất lượng cao.',
-    image: 'images/coffee-machine.jpg',
+    image: 'images/coffee-machine.webp',
     link: '#products'
   },
   {
     tag: 'Nguyên Liệu Cao Cấp',
     title: 'Trà Pha Chế & Nông Sản Sấy',
     desc: 'Tuyển chọn các dòng trà chuyên dụng giúp định hình hương vị đồ uống, kèm theo các sản phẩm nông sản sấy cao cấp như hạt điều, chuối sấy.',
-    image: 'images/traphache.jpg',
+    image: 'images/traphache.webp',
     link: '#services'
   },
   {
     tag: 'Thiết Bị F&B',
     title: 'Máy Móc Pha Chế Hiện Đại',
     desc: 'Đồng hành cùng sự phát triển của quán với hệ thống trang thiết bị, máy móc tiên tiến, tối ưu hiệu suất cho mô hình cà phê, trà sữa và nước ép.',
-    image: 'images/fbdevice.jpg',
+    image: 'images/fbdevice.webp',
     link: '#services'
   },
   {
     tag: 'Đào Tạo & Setup',
     title: 'Giải Pháp Vận Hành Quán Toàn Diện',
     desc: 'Xây dựng nền tảng kinh doanh vững chắc với dịch vụ tư vấn setup cửa hàng, chuỗi F&B trọn gói cùng các khóa đào tạo pha chế chuyên sâu.',
-    image: 'images/training_setup.jpg',
+    image: 'images/training_setup.webp',
     link: '#services'
   }
 ];

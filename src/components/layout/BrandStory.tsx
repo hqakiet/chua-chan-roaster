@@ -9,7 +9,7 @@ const BrandStory = () => {
     >
       <div className="container story-grid">
         <div className="story-image">
-          <img src="images/brand_story.png" alt="Pour over coffee process" />
+          <img src="images/brand_story.webp" alt="Pour over coffee process" />
         </div>
 
         <div>

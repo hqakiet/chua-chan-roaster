@@ -9,7 +9,7 @@ const CORE_PRODUCTS = [
     blend: '100% Arabica Cầu Đất',
     taste: 'Chua thanh, ngọt nhẹ, hậu vị trái cây',
     trait: 'Phức hợp nhưng cân bằng',
-    bgImage: 'images/tri.png'
+    bgImage: 'images/tri.webp'
   },
   {
     id: 'duc',
@@ -18,7 +18,7 @@ const CORE_PRODUCTS = [
     blend: '100% Robusta Natural',
     taste: 'Đậm, body mạnh, hơi đắng, ít chua.',
     trait: 'Mạnh mẽ nhưng êm dịu',
-    bgImage: 'images/duc.png'
+    bgImage: 'images/duc.webp'
   },
   {
     id: 'nhan',
@@ -27,7 +27,7 @@ const CORE_PRODUCTS = [
     blend: '80% Robusta Honey & 20% Arabica Cầu Đất',
     taste: 'Đắng vừa, hậu ngọt sâu',
     trait: 'Trầm, giàu chiều sâu',
-    bgImage: 'images/nhan.png'
+    bgImage: 'images/nhan.webp'
   },
   {
     id: 'tai',
@@ -36,7 +36,7 @@ const CORE_PRODUCTS = [
     blend: '100% Robusta Honey',
     taste: 'Đậm đà, hậu ngọt trái cây, điểm nhấn rõ rệt',
     trait: 'Bùng nổ, cá tính, giàu năng lượng',
-    bgImage: 'images/tai.png'
+    bgImage: 'images/tai.webp'
   },
   {
     id: 'loc',
@@ -45,7 +45,7 @@ const CORE_PRODUCTS = [
     blend: '70% Robusta Natural & 30% Arabica Cầu Đất',
     taste: 'Ngọt hậu, thơm nồng, chua thanh nhẹ',
     trait: 'Tươi mới, hài hòa',
-    bgImage: 'images/loc.png'
+    bgImage: 'images/loc.webp'
   }
 ];
 

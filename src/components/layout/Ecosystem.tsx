@@ -16,7 +16,7 @@ const ECOSYSTEM_DATA = [
     items: [
       {
         name: 'Cà Phê Pha Máy',
-        img: 'images/caphe-phamay.jpg',
+        img: 'images/caphe-phamay.webp',
         desc: 'Được rang mộc chuyên dụng để chiết xuất lớp Crema hoàn hảo cho các dòng máy pha.',
         details: [
           {
@@ -31,7 +31,7 @@ const ECOSYSTEM_DATA = [
       },
       {
         name: 'Cà Phê Pha Phin',
-        img: 'images/caphe-phin.jpg',
+        img: 'images/caphe-phin.webp',
         desc: 'Hương vị truyền thống đậm đà, hậu vị ngọt sâu, chuẩn gu cà phê Việt.',
         details: [
           {
@@ -46,7 +46,7 @@ const ECOSYSTEM_DATA = [
       },
       {
         name: 'Cà Phê Túi Giấy',
-        img: 'images/caphe-tui-giay.jpg',
+        img: 'images/caphe-tui-giay.webp',
         desc: 'Tiện lợi, nhanh chóng nhưng vẫn giữ trọn hương vị cà phê rang mộc tươi mới.',
         details: [
           {
@@ -68,7 +68,7 @@ const ECOSYSTEM_DATA = [
     items: [
       {
         name: 'Trà Pha Chế',
-        img: 'images/tra-olong.jpg',
+        img: 'images/tra-olong.webp',
         desc: 'Cốt trà đậm vị, hương thơm tự nhiên, phù hợp pha trà sữa và trà trái cây.',
         details: [
           { label: 'Phân loại', value: 'Trà Lài, Trà Olong, Trà Đen' },
@@ -77,7 +77,7 @@ const ECOSYSTEM_DATA = [
       },
       {
         name: 'Đặc Sản Núi Chứa Chan',
-        img: 'images/chuoi-say.png',
+        img: 'images/chuoi-say.webp',
         desc: 'Nông sản địa phương tuyển chọn, sấy giòn rụm, giữ nguyên dưỡng chất.',
         details: [
           { label: 'Sản phẩm', value: 'Chuối sấy, Hạt điều' },
@@ -93,13 +93,13 @@ const ECOSYSTEM_DATA = [
     items: [
       {
         name: 'Máy Pha Cà Phê',
-        img: 'images/may-pha-caphe.jpg',
+        img: 'images/may-pha-caphe.webp',
         desc: 'Hệ thống máy pha tự động và bán tự động từ các thương hiệu hàng đầu thế giới.',
         details: [], // Bỏ phần details chung
         subItems: [
           {
             name: 'Nuova Simonelli Appia Life 2G',
-            img: 'images/nuova-simonelli.jpg',
+            img: 'images/nuova-simonelli.webp',
             desc: 'Dòng máy pha espresso chuyên nghiệp cao cấp từ Ý. Nồi hơi đồng dung tích lớn, chiết xuất ổn định tuyệt đối ngay cả trong giờ cao điểm.',
             specs: [
               { label: 'Kích thước', value: '78.4 x 49.8 x 54.5 cm' },
@@ -109,7 +109,7 @@ const ECOSYSTEM_DATA = [
           },
           {
             name: 'Casadio Undici A1 Group',
-            img: 'images/casadio-undici.png',
+            img: 'images/casadio-undici.webp',
             desc: 'Casadio Undici sở hữu thiết kế tinh tế, cấu tạo đa chức năng, hoàn toàn phù hợp cho mọi mô hình kinh doanh quán cà phê',
             specs: [
               { label: 'Kích thước', value: '43 x 53 x 57 cm' },
@@ -119,7 +119,7 @@ const ECOSYSTEM_DATA = [
           },
           {
             name: 'Gemilai CRM 3200B',
-            img: 'images/gemilai-crm.jpg',
+            img: 'images/gemilai-crm.webp',
             desc: 'Thế Hệ Mới thuộc phân khúc tầm trung dành quán cà phê nhỏ vừa, mô hình cà phê mang đi. Sở hữu các chức năng cơ bản cần thiết nhất của một máy pha cà phê Espresso. Thiết kế đơn giản nhưng tinh tế và hiện đại. Các chức năng, phím bấm thân thiện để phù hợp với tất cả mọi người dễ dàng sử dụng.',
             specs: [
               { label: 'Kích thước', value: '35 x 49 x 42 cm' },
@@ -131,13 +131,13 @@ const ECOSYSTEM_DATA = [
       },
       {
         name: 'Máy Xay Cà Phê & Máy Nén',
-        img: 'images/mayxay-caphe.jpg',
+        img: 'images/mayxay-caphe.webp',
         desc: 'Kiểm soát độ mịn hoàn hảo cho từng shot Espresso.',
         details: [],
         subItems: [
           {
             name: 'Fiorenzato F64E',
-            img: 'images/fiorenzato.png',
+            img: 'images/fiorenzato.webp',
             desc: 'Dòng máy thế hệ mới với nhiều ưu điểm nỗi bật. Nhưng nhìn chung, cứng cáp – mạnh mẽ – thông minh là những từ khóa chính xác khi nhận xét về F64E.',
             specs: [
               { label: 'Kích thước', value: '255 x 320 x 635mm' },
@@ -147,7 +147,7 @@ const ECOSYSTEM_DATA = [
           },
           {
             name: 'Mazzer Super Jolly',
-            img: 'images/mazzer-super-jolly.jpg',
+            img: 'images/mazzer-super-jolly.webp',
             desc: 'Dòng máy xay cà phê cao cấp được ra đời bởi sự hợp tác của hai thương hiệu đình đám La Marzocco Home và Mazzer. Sản phẩm được người dùng đánh giá là sản phẩm hoàn hảo dành cho những cửa hàng có quy mô trung bình.',
             specs: [
               { label: 'Kích thước', value: '195 x 263 x 610mm' },
@@ -159,13 +159,13 @@ const ECOSYSTEM_DATA = [
       },
       {
         name: 'Máy Làm Đá',
-        img: 'images/may-lam-da.jpg',
+        img: 'images/may-lam-da.webp',
         desc: 'Cung cấp nguồn đá sạch liên tục cho hệ thống quầy bar.',
         details: [],
         subItems: [
           {
             name: 'Kaiser NK 63',
-            img: 'images/kaiser-nk-63.png',
+            img: 'images/kaiser-nk-63.webp',
             desc: 'Mẫu máy làm đá viên dạng khối vuông, được thiết kế dành riêng cho các không gian kinh doanh vừa và nhỏ như quán trà sữa, bar cocktail hay nhà hàng gia đình.',
             specs: [
               { label: 'Kích thước', value: '515 x 620 x 835 mm' },
@@ -176,7 +176,7 @@ const ECOSYSTEM_DATA = [
           },
           {
             name: 'Kaiser IMK 150',
-            img: 'images/kaiser-imk-150.jpg',
+            img: 'images/kaiser-imk-150.webp',
             desc: 'Thiết kế dạng tủ đứng với lớp vỏ inox cao cấp sáng bóng. Đây là chất liệu thường dùng trong thiết bị nhà bếp chuyên nghiệp nên có khả năng chống gỉ sét tốt, dễ lau chùi, đảm bảo vệ sinh, chịu được môi trường ẩm và nhiệt độ cao.',
             specs: [
               { label: 'Kích thước', value: '74.5 x 62 x 113 cm' },
@@ -196,13 +196,13 @@ const ECOSYSTEM_DATA = [
     items: [
       {
         name: 'Thiết Bị Trà Sữa Chuyên Dụng',
-        img: 'images/thietbi_trasua.jpg',
+        img: 'images/thietbi_trasua.webp',
         desc: 'Trọn bộ máy móc giúp tối ưu thời gian pha chế và chuẩn hóa định lượng.',
         details: [],
         subItems: [
           {
             name: 'Máy đun nước siêu tốc FEST RC-10',
-            img: 'images/fest-rc.jpg',
+            img: 'images/fest-rc.webp',
             desc: 'Là một phần không thể thiếu của các của hàng trà sữa, nước giải khát. Tuy nhiên, việc giữ ấm một lượng lớn nước là khá khó khăn. Chưa kể đến việc đun nước nước cũng cực kỳ tốn thời gian, làm chậm quy trình làm việc và tốc độ phục vụ khách hàng của bạn.',
             specs: [
               { label: 'Kích thước', value: '188 x 370 x 645 mm' },
@@ -211,7 +211,7 @@ const ECOSYSTEM_DATA = [
           },
           {
             name: 'Máy đun nước nóng Marco MT8',
-            img: 'images/marco-mt8.png',
+            img: 'images/marco-mt8.webp',
             desc: 'Marco Boiler MT 8 là sản phẩm mới , được trang bị thêm vòi nước nóng tiện lợi . Vỏ bằng thép không gỉ với chân đế cách mặt bàn tối thiểu. Nồi hơi được bọc cách nhiệt . Tương thích với bộ chuyển đổi vòi nước rảnh tay.',
             specs: [
               { label: 'Kích thước', value: '436 x 202 x 589 mm' },
@@ -222,13 +222,13 @@ const ECOSYSTEM_DATA = [
       },
       {
         name: 'Máy Xay Sinh Tố & Nước Ép',
-        img: 'images/mayxay-sinhto.jpg',
+        img: 'images/mayxay-sinhto.webp',
         desc: 'Máy xay công nghiệp công suất lớn, phá đá mượt mà.',
         details: [],
         subItems: [
           {
             name: 'Vitamix The Quiet One 220v',
-            img: 'images/vitamix-quiet-.png',
+            img: 'images/vitamix-quiet.webp',
             desc: 'Là một công cụ hỗ trợ đắc lực cho bạn trong việc làm phong phú thêm thực đơn giải khát với các món xay của mình.',
             specs: [
               { label: 'Kích thước', value: '396 x 343 x 645 mm' },
@@ -237,7 +237,7 @@ const ECOSYSTEM_DATA = [
           },
           {
             name: 'Omniblend V-TM800A',
-            img: 'images/omniblend-tm800a.jpg',
+            img: 'images/omniblend-tm800a.webp',
             desc: 'Marco Boiler MT 8 là sản phẩm mới , được trang bị thêm vòi nước nóng tiện lợi . Vỏ bằng thép không gỉ với chân đế cách mặt bàn tối thiểu. Nồi hơi được bọc cách nhiệt . Tương thích với bộ chuyển đổi vòi nước rảnh tay.',
             specs: [
               { label: 'Kích thước', value: '213 x 235 x 405 mm' },
@@ -255,7 +255,7 @@ const ECOSYSTEM_DATA = [
     items: [
       {
         name: 'Đào Tạo Pha Chế',
-        img: 'images/daotao-phache.jpg',
+        img: 'images/daotao-phache.webp',
         desc: 'Cập nhật công thức mới nhất, trang bị kỹ năng tay nghề chuẩn chuyên gia.',
         details: [
           { label: 'Cà phê', value: 'Máy & Truyền thống' },
@@ -264,7 +264,7 @@ const ECOSYSTEM_DATA = [
       },
       {
         name: 'Setup & Vận Hành Quán',
-        img: 'images/setup-coffe-shop.jpg',
+        img: 'images/setup-coffe-shop.webp',
         desc: 'Giải pháp toàn diện từ lên menu, bố trí quầy bar đến đào tạo nhân sự cho chuỗi.',
         details: [
           { label: 'Mô hình', value: 'Quán Cà Phê, Quán Trà Sữa, Nước Ép' },

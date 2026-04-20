@@ -7,7 +7,7 @@ const Footer = () => {
           <div className="bento-card span-2">
             <div className="bento-brand-content">
               <img
-                src="images/logo_chuachanroaster.png"
+                src="images/logo_chuachanroaster.webp"
                 alt="Chứa Chan Roaster"
                 className="bento-logo"
               />
@@ -37,7 +37,7 @@ const Footer = () => {
               {/* Store 1 */}
               <div className="store-mini-card">
                 <img
-                  src="images/cuahang1.jpg"
+                  src="images/cuahang1.webp"
                   alt="Cửa hàng 1"
                   className="store-mini-img"
                 />
@@ -50,7 +50,7 @@ const Footer = () => {
               {/* Store 2 */}
               <div className="store-mini-card">
                 <img
-                  src="images/coming-soon.jpg"
+                  src="images/coming-soon.webp"
                   alt="Cửa hàng 2"
                   className="store-mini-img"
                 />
